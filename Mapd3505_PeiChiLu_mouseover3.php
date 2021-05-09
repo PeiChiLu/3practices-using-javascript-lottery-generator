@@ -53,7 +53,7 @@
 // 		   }
 // this output will pop up same random number in array
          for ( i=0 ; i<6 ; i++ ){
-         var num = getRandomIntInclusive(1,99);
+         var num = getRandomIntInclusive(1,49);
          console.log(num);
          array1.push(num);
            if ( i > 0 ){
@@ -92,7 +92,7 @@
 	    
 		<h1>作業三&nbsp;<br>Mouse over觸發</h1>
         <h3>本作業是練習JavaScript事件處理，此系列共練習三種方式觸發事件處理：作業一Click觸發、作業二mouse out觸發、作業三mouseover觸發。<br>
-        此程式是利用JavaScript送出隨機的樂透號碼，當滑鼠進入"mouse over me"按鈕上方時，將產生一組介於1~99之間的隨機二位整數六碼。如果再次把滑鼠移到按鈕上方範圍會再產生新的一組號碼，但舊的隨機號碼將會消失，不會有歷史記錄。</h3>
+        此程式是利用JavaScript送出隨機的樂透號碼，當滑鼠進入"mouse over me"按鈕上方時，將產生一組介於1~49之間的隨機二位整數六碼。如果再次把滑鼠移到按鈕上方範圍會再產生新的一組號碼，但舊的隨機號碼將會消失，不會有歷史記錄。</h3>
 		<button id='btn' style="font-family: 'Noto Sans TC', sans-serif;background-color:#ffffff;font-size: x-large;
     cursor: pointer;margin-top: 50px;margin-bottom:50px;"> mouse over me </button>
 		<div id ='msgArea' style="font-family: 'Noto Sans TC', sans-serif;color:red;font-size: 51px;letter-spacing: 0.25em;"></div>
