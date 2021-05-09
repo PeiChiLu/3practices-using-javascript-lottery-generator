@@ -59,8 +59,8 @@
       <h2>Homeworks</h2>
       <ul>
         <li><a href="Mapd3505_PeiChiLu_click1.html">Homework 1 &mdash; 作業一 click觸發</a></li>
-        <li><a href="Mapd3505_PeiChiLu_mouseout2.php">Homework 2 &mdash; 作業二 mouseout觸發</a></li>
-        <li><a href="Mapd3505_PeiChiLu_mouseout2.php">Homework 3 &mdash; 作業二 mouseover觸發</a></li>
+        <li><a href="Mapd3505_PeiChiLu_mouseout2.html">Homework 2 &mdash; 作業二 mouseout觸發</a></li>
+        <li><a href="Mapd3505_PeiChiLu_mouseout2.html">Homework 3 &mdash; 作業二 mouseover觸發</a></li>
 
         <!-- <li><a href="Exercises/Exercise-02/index.html">Exercise 2 &mdash; Coding from Life</a></li>
         
