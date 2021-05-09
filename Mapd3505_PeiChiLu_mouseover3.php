@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;700&display=swap" rel="stylesheet">
+<style>
+      h1 {
+        font-family: 'Noto Sans TC', sans-serif;
+        font-weight: 700;
+        color: #000000;
+        text-align: left;
+        font-size: 51px;
+        letter-spacing: 0.25em;
+        background-color: white;
+      }
+      h3 {
+        font-family: 'Noto Sans TC', sans-serif;
+        font-weight: 400;
+        color: #000000;
+        text-align: left;
+        font-size: 17px;
+        margin-top:29px;
+      }
+      p {
+        font-family: 'Noto Sans TC', sans-serif;
+        font-weight: 100;
+        color: #000000;
+        text-align: left;
+/*         font-size: 12px; */
+        margin-bottom: 10em;
+      }
+    </style>
+<meta charset='utf-8'>
+<title>Mapd3505_呂珮綺_作業三_Lottery:送樂透號碼回前端(mouseover觸發）</title>
+<!-- 以下是javascript 寫在head或是body裡面都可以-->
+<script>
+    window.addEventListener('load',init);
+    function init(){
+       let btn = document.getElementById("btn"); //欲操作此id的物件
+	   let msgArea = document.getElementById("msgArea");
+	   function getRandomIntInclusive(min, max) {
+		   min = Math.ceil(min);
+		   max = Math.floor(max);
+		   return Math.floor(Math.random() * (max - min + 1) + min); //The maximum is inclusive and the minimum is inclusive
+		 }
+	   function getLotteryNum(){
+	     var array1 = [];
+// 	   while ( array1.length < 6){
+//             var num = Math.floor(Math.random() * 100);
+//             console.log(num);
+//             array1.push(num);
+//             console.log(array1);
+// 		   }
+// this output will pop up same random number in array
+         for ( i=0 ; i<6 ; i++ ){
+         var num = getRandomIntInclusive(1,99);
+         console.log(num);
+         array1.push(num);
+           if ( i > 0 ){
+             if ( num == array1 [i-1]){
+               array1.pop();
+               i-=1;
+             }
+           }
+         console.log(array1);   
+         }
+         return array1;
+	   }
+	   btn.addEventListener("mouseover", processEvent); //觸發事件，addEventListenter：做事的傾聽器
+	       function processEvent(){
+		     msgArea.innerHTML = "<font > 您隨機產生的樂透六碼 是 "
+		      + getLotteryNum()
+		      +"</font>";
+		 
+		   }
+    }
+
+</script>
+</head>
+<body style="background-color:#ffe24f;">
+    <div align="left" style="margin-top: 100px;
+    margin-right: 100px;
+    margin-bottom: -68px;
+    margin-left: 100px;">
+    <h3>Mapd3505_呂珮綺</h3>
+    <a href="Mapd3505_PeiChiLu_click1.php" style="margin-right:20px;font-family: 'Noto Sans TC', sans-serif;text-decoration: auto;color:#ffffff">作業一 Click觸發</a>
+	<a href="Mapd3505_PeiChiLu_mouseout2.php" style="margin-right:20px;font-family: 'Noto Sans TC', sans-serif;text-decoration: auto;color:#ffffff">作業二 mouse out觸發</a>
+	<a href="Mapd3505_PeiChiLu_mouseover3.php" style="margin-right:20px;font-family: 'Noto Sans TC', sans-serif;text-decoration: auto;color:#000000;background-color: white;">作業三 mouseover觸發</a>
+	<br />
+    </div>
+	<div align="center" style="margin:100px;">
+	    
+		<h1>作業三&nbsp;<br>Mouse over觸發</h1>
+        <h3>本作業是練習JavaScript事件處理，此系列共練習三種方式觸發事件處理：作業一Click觸發、作業二mouse out觸發、作業三mouseover觸發。<br>
+        此程式是利用JavaScript送出隨機的樂透號碼，當滑鼠進入"mouse over me"按鈕上方時，將產生一組介於1~99之間的隨機二位整數六碼。如果再次把滑鼠移到按鈕上方範圍會再產生新的一組號碼，但舊的隨機號碼將會消失，不會有歷史記錄。</h3>
+		<button id='btn' style="font-family: 'Noto Sans TC', sans-serif;background-color:#ffffff;font-size: x-large;
+    cursor: pointer;margin-top: 50px;margin-bottom:50px;"> mouse over me </button>
+		<div id ='msgArea' style="font-family: 'Noto Sans TC', sans-serif;color:red;font-size: 51px;letter-spacing: 0.25em;"></div>
+		</div>
+		
+	<!-- 以下是javascript 寫在head或是body裡面都可以-->
+	<script>
+
+   </script>
+</body>
+</html>
