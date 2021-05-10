@@ -1,95 +1,16 @@
-<!DOCTYPE html>
-<html>
+<div class="main">
 
-<head>
-  <title>PeiChi's 2021 App Developer Class</title>
-  <meta charset="utf-8" />
-  
-  <style>
-    body {
-      font-family:  sans-serif;
-      line-height: 1.5em;
-      background-color: white;  
-    }
-    .main {
-      width: 50%;
-      margin: 3em auto;
-      padding: 1em;
-      /* border:1px solid #CCC; */
-    }
+# Peichi's  
+2021 App Developer Class
 
-    h1 {
-      margin-top: 0;
-      font-size: 3.5em;
-      line-height: 1em;
-    }
+<div id="exercises">
 
+## Homeworks
 
-    a {
-      font-weight: bold;
-      color: #0000ff;
-      text-decoration: none;
-    }
+*   [Homework 1 — 作業一 click觸發](Mapd3505_PeiChiLu_click1.html)
+*   [Homework 2 — 作業二 mouseout觸發](Mapd3505_PeiChiLu_mouseout2.html)
+*   [Homework 3 — 作業二 mouseover觸發](Mapd3505_PeiChiLu_mouseout2.html)
 
-    a:hover {
-      background-color: #0000ff;
-      color:#ffffff;
-    }
+</div>
 
-    ul {
-      padding-left: 18px;
-      list-style: none;
-    }
-
-    ul li {
-      color: #CCC;
-    }
-
-  </style>
-</head>
-
-<body>
-  <div class="main">
-
-    <h1> Peichi's <br>2021 App Developer Class</h1>
-
-<!-- Exercises 01 to 10-->
-    
-    <div id="exercises">
-      <h2>Homeworks</h2>
-      <ul>
-        <li><a href="Mapd3505_PeiChiLu_click1.html">Homework 1 &mdash; 作業一 click觸發</a></li>
-        <li><a href="Mapd3505_PeiChiLu_mouseout2.html">Homework 2 &mdash; 作業二 mouseout觸發</a></li>
-        <li><a href="Mapd3505_PeiChiLu_mouseout2.html">Homework 3 &mdash; 作業二 mouseover觸發</a></li>
-
-        <!-- <li><a href="Exercises/Exercise-02/index.html">Exercise 2 &mdash; Coding from Life</a></li>
-        
-        <li><a href="Exercises/Exercise-03/index.html">Exercise 3 &mdash; Media Query</a></li>
-        
-        <li><a href="Exercises/Exercise-04/index.html">Exercise 4 &mdash; Spreadsheet Typeface</a></li>
-        
-        <li><a href="Exercises/Exercise-05/index.html">Exercise 5 &mdash; Drag and Drop, jQuery</a></li>
-        
-        <li><a href="Exercises/Exercise-06/index.html">Exercise 6 &mdash; Favicon</a></li>
-        
-        <li><a href="Exercises/Exercise-07/index.html">Exercise 7 &mdash; P2P, What is blockchain?</a></li> -->
-      </ul>
-    </div>
- 
- <!-- Projects 1 2 3-->
-
-    <!-- <div id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li><a href="Projects/Project-01/index.html">Project 1 &mdash; Patterns</a></li>
-        <li>Project 2 &mdash; CSS Typface</li>
-        <li>Project 3 &mdash; Republish a Text</li>
-      </ul>
-    </div> -->
-
-  <!--Reading Pecha Kucha-->
-     <!-- <div id="Pecha-Kucha">
-        Put a link to your Pecha Kucha here
-    </div> -->
-</body>
-</html>
+</div>
